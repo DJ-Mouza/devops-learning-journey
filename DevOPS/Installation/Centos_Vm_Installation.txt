@@ -1,0 +1,47 @@
+Step 1: Download CentOS Stream 9 ISO
+
+    Download the latest version of CentOS Stream 9 ISO from the official website.
+
+Step 2: Install CentOS Stream 9 on VirtualBox
+
+    Open VirtualBox and create a new virtual machine for CentOS Stream 9.
+        Choose appropriate settings (e.g., memory, CPU) for the virtual machine.
+    Go to the VirtualBox Settings for your newly created VM.
+    Under Settings, navigate to Storage:
+        Click on the Optical Drive.
+        In the drop-down menu, select the ISO image of CentOS Stream 9 you downloaded and attach it to the virtual machine.
+
+Step 3: Start the Virtual Machine
+
+    Click Start to power up the VM.
+    From the boot menu, select Install CentOS Stream 9.
+
+Step 4: OS Installation Configuration
+
+    Language Selection: Choose your desired language.
+    Installation Destination:
+        Select Local Standard Disks.
+        Choose the target hard disk for installation.
+        Configure storage settings as needed (use the default or set up custom partitions).
+    Network & Hostname:
+        Select your network adapter.
+        Set a hostname for your VM.
+    Root Password:
+        Set a root password for the system.
+        If you choose a weak password, you’ll need to confirm it.
+
+Step 5: Begin Installation
+
+    Click Begin Installation to start the installation process.
+
+Step 6: Finalize Installation
+
+    After installation completes, click Shut Down.
+    Go back to the VM settings in VirtualBox:
+        Under Storage, detach the ISO disc from the virtual drive.
+        Confirm the changes and restart the VM.
+
+Step 7: Set up User and Password
+
+    Upon restarting, follow the prompts to create a regular user and set a password.
+

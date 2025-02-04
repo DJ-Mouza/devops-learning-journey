@@ -1,0 +1,83 @@
+Step 1: Download Ubuntu Server ISO
+
+    Go to the Ubuntu LTS download page and select the server install image (e.g., 64-bit PC (AMD64) server install image).
+    Download the ISO file.
+
+Step 2: Install Ubuntu Server on VirtualBox
+
+    Open VirtualBox and create a new virtual machine for Ubuntu Server.
+        Select Ubuntu as the OS type and set other configurations (memory, CPU, etc.).
+
+    Configure the VirtualBox Settings:
+        Go to Settings > Storage.
+        Under Controller: IDE, click the Empty Disk icon.
+        In the Optical Drive section, select the drop-down disk icon and attach the Ubuntu ISO image you downloaded.
+
+    Start the Virtual Machine:
+        Click Start to begin the Ubuntu installation.
+
+Step 3: Ubuntu Installation Process
+
+    Select Language:
+        Choose English as the installation language and press Enter.
+
+    Installer Update Available:
+        Choose Continue without updating (default) and press Enter.
+
+    Keyboard Configuration:
+        Select Done (default) and press Enter.
+
+    Choose Type of Install:
+        Select Ubuntu server (default) and press Enter.
+
+    Network Connections:
+        Select Done (default) and press Enter.
+
+    Proxy Address:
+        Select Done (default) and press Enter.
+
+    Configure Ubuntu Archive Mirror:
+        Select Done (default) and press Enter.
+
+    Guided Storage Configuration:
+        Use the Tab key to select Done and press Enter.
+
+    Storage Configuration:
+        Select Done (default) and press Enter.
+
+    Confirm Destructive Action:
+        A pop-up will appear asking to confirm destructive action.
+        Select Continue and press Enter.
+
+    Profile Setup:
+        Fill in the form with your details (e.g., username, password).
+        Once completed, use the Tab key to select Done and press Enter.
+
+    Upgrade to Ubuntu Pro:
+        Select Continue (default) and press Enter.
+
+    SSH Setup:
+        Press the Spacebar to select [x] Install OpenSSH server.
+        Use the Tab key to select Done and press Enter.
+
+    Featured Server Snaps:
+        Do not select any options.
+        Use the Tab key to select Done and press Enter.
+
+Step 4: Complete Installation
+
+    The installation will proceed and complete.
+    When prompted to reboot, skip the reboot.
+    Power off the Virtual Machine instead, and then go to VirtualBox Settings:
+        Under Storage, detach the ISO disc from the virtual drive.
+        Confirm the change and restart the VM.
+
+Step 5: Log In to Ubuntu
+
+    After the system restarts, you will see the login screen.
+    Log in using the username and password you set during the profile setup.
+
+
+
+
+

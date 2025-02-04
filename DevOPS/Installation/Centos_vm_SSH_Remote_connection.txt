@@ -1,0 +1,58 @@
+Step 1: Retrieve IP Address from CentOS
+
+    From the CentOS Desktop, open the Terminal.
+    Type the following command and press Enter:
+
+    ip addr show
+
+    Look for the bridge adapter (e.g., 3: enp0s8: .......).
+    Record the IP address from the bridge adapter. The format will be something like 192.1XX.1.XX/YY, but only record the IP address portion (e.g., 192.1XX.1.XX).
+
+Step 2: Record the CentOS Username
+
+    From the terminal, note the CentOS username displayed in the prompt (e.g., [abcdef@CentOSvm ~]), where abcdef is the username.
+
+Step 3: SSH from the Host OS (using Git Bash)
+
+    On your Host OS, open Git Bash.
+    In Git Bash, type the following command and press Enter:
+
+ssh username@ip_address
+
+    Replace username with your CentOS username (e.g., abcdef).
+    Replace ip_address with the IP address you recorded earlier (e.g., 192.1XX.1.XX).
+    Example:
+
+        ssh abcdef@192.1XX.1.XX
+
+Step 4: Confirm Connection
+
+    When prompted with the message:
+
+    Are you sure you want to continue connecting (yes/no)? 
+
+    Type yes and press Enter.
+    You will then be prompted for the password. Enter the CentOS user password and press Enter.
+
+Step 5: Verify SSH Connection
+
+    Once logged in, you should see the terminal prompt change to indicate you're connected to the CentOS system.
+    To verify the IP address on Git Bash, run the following command:
+
+ip addr show
+
+    The output should match the IP address you noted earlier from the CentOS Terminal.
+
+To check the hostname, type the following command in Git Bash:
+
+    hostname
+
+        This will display the hostname of your CentOS system.
+
+Step 6: Exit and Shutdown CentOS
+
+    To exit the SSH session, type:
+
+exit
+
+You can now safely shut down CentOS from VirtualBox.
