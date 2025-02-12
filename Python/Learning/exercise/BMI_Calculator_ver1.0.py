@@ -13,3 +13,8 @@ weight = 84
 bmi = (weight)/(height**2)
 
 print(bmi)
+
+print(round(bmi))               # rounding the result
+
+
+print(round(bmi, 2))            # rounding to 2 decimal point.
